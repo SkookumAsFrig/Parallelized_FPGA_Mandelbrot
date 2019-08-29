@@ -24,8 +24,6 @@ The number of iterations for the Mandelbrot algorithm can be dynamically selecte
 
 Below are some captured images of different regions of the Mandelbrot Set:
 
-![Alt text](Images/render1.jpg?raw=true "Title")
-
 ![Alt text](Images/render2.jpg?raw=true "Title")
 
 ![Alt text](Images/render3.jpg?raw=true "Title")
@@ -35,5 +33,7 @@ Below are some captured images of different regions of the Mandelbrot Set:
 ![Alt text](Images/render5.jpg?raw=true "Title")
 
 ![Alt text](Images/render6.jpg?raw=true "Title")
+
+![Alt text](Images/render1.jpg?raw=true "Title")
 
 ![Alt text](Images/render7.jpg?raw=true "Title")
