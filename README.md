@@ -4,7 +4,9 @@
 
 ![Alt text](Images/mandel2.gif?raw=true "Title")
 
-This is a completely custom implementation of the Mandelbrot Set visualization, on the Intel/Altera DE1-SoC Cyclone V FPGA board for VGA output on a 640x480 monitor. It incoporates medium-grained parallelization by dividing the screen into discrete tasks for each Mandelbrot solver, which speeds up the solution significantly. See data below for acceleration results. This was compared against dynamic parallelism using an ad hoc dispatching algorithm, and we found that the static task dispatching worked better because the dynamic dispatching's calculation overhead outweighed the small amount of extra speed-up due to better parallel utilization.
+This is a completely custom implementation of the Mandelbrot Set visualization, on the Intel/Altera DE1-SoC Cyclone V FPGA board for VGA output on a 640x480 monitor. It incoporates medium-grained parallelization by dividing the screen into discrete tasks for each Mandelbrot solver, which speeds up the solution significantly. The final frequency that we could run the whole design was 75 Mhz, utilizing 100% of the FPGA resources. See data below for acceleration results. This was compared against dynamic parallelism using an ad hoc dispatching algorithm, and we found that the static task dispatching worked better because the dynamic dispatching's calculation overhead outweighed the small amount of extra speed-up due to better parallel utilization.
+
+We also compiled various .sof files that can be directly loaded into the DE1-SoC's FPGA with varying amount of parallelism, which are located in the upper most FPGA design directory.
 
 ![Alt text](Images/perf_eval.JPG?raw=true "Title")
 
